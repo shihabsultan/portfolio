@@ -27,6 +27,19 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Page Loader -->
+    <div class="page-loader" id="pageLoader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <p class="loader-text">LOADING</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+    
+    <!-- Rest of your content... -->
+    
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -47,8 +60,23 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-bg-pattern"></div>
+<section class="hero" id="hero">
+    <!-- Add Particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
+    <div class="hero-bg-pattern"></div>
+    <!-- Rest of hero content... -->        <div class="hero-bg-pattern"></div>
         <div class="container hero-content">
             <div class="hero-text">
                 <h1 class="hero-name">Shihab Bin Sultan</h1>
@@ -97,11 +125,12 @@
     </section>
 
     <!-- About Section -->
-    <section class="section about" id="about">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
+<!-- About Section -->
+<section class="section about" id="about">
+    <div class="container">
+        <h2 class="section-title reveal">About Me</h2>  <!-- ✅ Added "reveal" -->
+        <div class="about-content">
+            <div class="about-text reveal reveal-left">  <!-- ✅ Added "reveal reveal-left" -->
                     <p>
                         <strong>APEGA E.I.T.</strong> with a <strong>B.Sc. in Mechanical Engineering (CGPA 3.89)</strong> and <strong>NCEES FE exam passed</strong>. Expert in <strong>AutoCAD and Revit</strong> for piping layouts, 3D modeling, isometrics, P&IDs, and mechanical systems through extensive hands-on teaching at Bow Valley College and MCG Career College.
                     </p>
@@ -337,7 +366,7 @@
     <!-- Experience Section -->
     <section class="section experience" id="experience">
         <div class="container">
-            <h2 class="section-title">Relevant Experience & Projects</h2>
+            <h2 class="section-title reveal">Relevant Experience & Projects</h2>  <!-- ✅ CHANGED -->
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
@@ -535,8 +564,17 @@
     </footer>
 
     <script src="script.js"></script>
+            <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
+
 
 
