@@ -225,3 +225,11 @@ document.addEventListener('DOMContentLoaded', function() {
 console.log('%c👋 Hello there!', 'font-size: 24px; font-weight: bold; color: #3b82f6;');
 console.log('%cThanks for checking out my portfolio!', 'font-size: 14px; color: #6c757d;');
 console.log('%cLooking for a Mechanical Engineer? Let\'s connect!', 'font-size: 14px; color: #10b981;');
+
+// EMERGENCY: Force hide loader after 3 seconds no matter what
+setTimeout(function() {
+    var loader = document.getElementById('pageLoader');
+    if (loader) {
+        loader.style.display = 'none';
+    }
+}, 3000);
