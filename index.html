@@ -37,8 +37,13 @@
 
     <!-- Scroll Progress Bar -->
     <div class="scroll-progress" id="scrollProgress"></div>
-    
-    <!-- Rest of your content... -->
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M18 15l-6-6-6 6"/>
+        </svg>
+    </button>
     
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
@@ -51,6 +56,7 @@
             </button>
             <ul class="nav-menu" id="navMenu">
                 <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#content" class="nav-link">Content</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#experience" class="nav-link">Experience</a></li>
                 <li><a href="#education" class="nav-link">Education</a></li>
@@ -60,23 +66,22 @@
     </nav>
 
     <!-- Hero Section -->
-<section class="hero" id="hero">
-    <!-- Add Particles -->
-    <div class="particles">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div>
-    
-    <div class="hero-bg-pattern"></div>
-    <!-- Rest of hero content... -->        <div class="hero-bg-pattern"></div>
+    <section class="hero" id="hero">
+        <!-- Particles -->
+        <div class="particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="hero-bg-pattern"></div>
         <div class="container hero-content">
             <div class="hero-text">
                 <h1 class="hero-name">Shihab Bin Sultan</h1>
@@ -100,10 +105,27 @@
                         View LinkedIn
                     </a>
                 </div>
+                <!-- Social Links -->
+                <div class="hero-social-links">
+                    <a href="https://medium.com/@shihabsultan" target="_blank" rel="noopener noreferrer" class="social-link" title="Read my Blog">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@shbsultan" target="_blank" rel="noopener noreferrer" class="social-link" title="Watch my Videos">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shihab-sultan/" target="_blank" rel="noopener noreferrer" class="social-link" title="Connect on LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                </div>
             </div>
             <div class="hero-image">
                 <div class="profile-frame">
-                    <!-- Replace src with your actual photo -->
                     <img src="profile-photo.jpg" alt="Shihab Bin Sultan - Mechanical Engineer" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                     <div class="profile-placeholder">
                         <svg viewBox="0 0 24 24" fill="currentColor">
@@ -125,12 +147,11 @@
     </section>
 
     <!-- About Section -->
-<!-- About Section -->
-<section class="section about" id="about">
-    <div class="container">
-        <h2 class="section-title reveal">About Me</h2>  <!-- ✅ Added "reveal" -->
-        <div class="about-content">
-            <div class="about-text reveal reveal-left">  <!-- ✅ Added "reveal reveal-left" -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title reveal">About Me</h2>
+            <div class="about-content">
+                <div class="about-text reveal reveal-left">
                     <p>
                         <strong>APEGA E.I.T.</strong> with a <strong>B.Sc. in Mechanical Engineering (CGPA 3.89)</strong> and <strong>NCEES FE exam passed</strong>. Expert in <strong>AutoCAD and Revit</strong> for piping layouts, 3D modeling, isometrics, P&IDs, and mechanical systems through extensive hands-on teaching at Bow Valley College and MCG Career College.
                     </p>
@@ -141,143 +162,137 @@
                         Seeking junior mechanical and pipeline engineer roles in Calgary's oil & gas and EPCM sector to contribute technical skills while progressing toward <strong>P.Eng.</strong> designation.
                     </p>
                 </div>
-                <div class="about-stats">
-                    <div class="stat-card">
+                <div class="about-stats reveal reveal-right">
+                    <div class="stat-card reveal-delay-1">
                         <span class="stat-number">3.89</span>
                         <span class="stat-label">CGPA</span>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card reveal-delay-2">
                         <span class="stat-number">FE</span>
                         <span class="stat-label">Exam Passed</span>
                     </div>
-                    <div class="stat-card">
+                    <div class="stat-card reveal-delay-3">
                         <span class="stat-number">E.I.T.</span>
                         <span class="stat-label">APEGA Registered</span>
                     </div>
                 </div>
             </div>
         </div>
-   </section>
+    </section>
 
-<!-- Video Introduction Section -->
-<section class="section video-section" id="video">
-    <div class="container">
-        <h2 class="section-title">Video Introduction</h2>
-        <div class="video-content">
-            <div class="video-wrapper">
-                <!-- 
-                    🎬 HOW TO ADD YOUR YOUTUBE VIDEO:
-                    1. Go to your YouTube video
-                    2. Click "Share" → "Embed"
-                    3. Copy the URL from the embed code (looks like: https://www.youtube.com/embed/XXXXXXXXXXX)
-                    4. Replace the src="" below with your URL
-                -->
-                <iframe 
-                    src="https://www.youtube.com/embed/yp66pSscO5g" 
-                    title="Shihab Bin Sultan - Video Introduction"
-                    frameborder="0" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    allowfullscreen>
-                </iframe>
-            </div>
-            <div class="video-description">
-                <h3>Get to Know Me</h3>
-                <p>
-                    In this brief introduction, I share my background in mechanical engineering, 
-                    my experience with AutoCAD and Revit, and my passion for contributing to 
-                    Alberta's energy sector. Learn about my journey from technical instruction 
-                    to pursuing hands-on pipeline and facilities engineering roles.
-                </p>
-                <div class="video-highlights">
-                    <div class="video-highlight-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        <span>Engineering Background</span>
-                    </div>
-                    <div class="video-highlight-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        <span>Technical Skills Overview</span>
-                    </div>
-                    <div class="video-highlight-item">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="20 6 9 17 4 12"/>
-                        </svg>
-                        <span>Career Goals</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-</section>
-
-<!-- My Content Section - Blog & YouTube -->
-<section class="section content-section" id="content">
-    <div class="container">
-        <h2 class="section-title">My Content</h2>
-        <p class="section-subtitle">
-            Explore my engineering insights, tutorials, and professional journey through my blog and video content.
-        </p>
-        
-        <div class="content-cards">
-            <!-- Medium Blog Card -->
-            <a href="https://medium.com/@shihabsultan" class="content-card blog-card" target="_blank" rel="noopener noreferrer">
-                <div class="content-card-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
-                    </svg>
-                </div>
-                <div class="content-card-body">
-                    <h3>Medium Blog</h3>
-                    <p>Read my articles on mechanical engineering, CAD best practices, career insights, and industry trends in Alberta's energy sector.</p>
-                    <div class="content-card-topics">
-                        <span class="topic-tag">Engineering</span>
-                        <span class="topic-tag">CAD Tips</span>
-                        <span class="topic-tag">Career</span>
-                    </div>
-                </div>
-                <div class="content-card-action">
-                    <span>Read Articles</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </a>
-
-            <!-- YouTube Channel Card -->
-            <a href="https://www.youtube.com/shbsultan" class="content-card youtube-card" target="_blank" rel="noopener noreferrer">
-                <div class="content-card-icon">
-                    <svg viewBox="0 0 24 24" fill="currentColor">
-                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
-                    </svg>
-                </div>
-                <div class="content-card-body">
-                    <h3>YouTube Channel</h3>
-                    <p>Watch video tutorials, project walkthroughs, AutoCAD & Revit tips, and my professional engineering journey updates.</p>
-                    <div class="content-card-topics">
-                        <span class="topic-tag">Tutorials</span>
-                        <span class="topic-tag">Projects</span>
-                        <span class="topic-tag">Vlogs</span>
-                    </div>
-                </div>
-                <div class="content-card-action">
-                    <span>Watch Videos</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <path d="M5 12h14M12 5l7 7-7 7"/>
-                    </svg>
-                </div>
-            </a>
-        </div>
-
-<!-- Skills Section -->
-<section class="section skills" id="skills">
+    <!-- Video Introduction Section -->
+    <section class="section video-section" id="video">
         <div class="container">
-            <h2 class="section-title">Key Skills</h2>
+            <h2 class="section-title reveal">Video Introduction</h2>
+            <div class="video-content">
+                <div class="video-wrapper reveal reveal-left">
+                    <iframe 
+                        src="https://www.youtube.com/embed/yp66pSscO5g" 
+                        title="Shihab Bin Sultan - Video Introduction"
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video-description reveal reveal-right">
+                    <h3>Get to Know Me</h3>
+                    <p>
+                        In this brief introduction, I share my background in mechanical engineering, 
+                        my experience with AutoCAD and Revit, and my passion for contributing to 
+                        Alberta's energy sector. Learn about my journey from technical instruction 
+                        to pursuing hands-on pipeline and facilities engineering roles.
+                    </p>
+                    <div class="video-highlights">
+                        <div class="video-highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Engineering Background</span>
+                        </div>
+                        <div class="video-highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Technical Skills Overview</span>
+                        </div>
+                        <div class="video-highlight-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"/>
+                            </svg>
+                            <span>Career Goals</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- My Content Section - Blog & YouTube -->
+    <section class="section content-section" id="content">
+        <div class="container">
+            <h2 class="section-title reveal">My Content</h2>
+            <p class="section-subtitle reveal">
+                Explore my engineering insights, tutorials, and professional journey through my blog and video content.
+            </p>
+            
+            <div class="content-cards">
+                <!-- Medium Blog Card -->
+                <a href="https://medium.com/@shihabsultan" class="content-card blog-card reveal reveal-left" target="_blank" rel="noopener noreferrer">
+                    <div class="content-card-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                        </svg>
+                    </div>
+                    <div class="content-card-body">
+                        <h3>Medium Blog</h3>
+                        <p>Read my articles on mechanical engineering, CAD best practices, career insights, and industry trends in Alberta's energy sector.</p>
+                        <div class="content-card-topics">
+                            <span class="topic-tag">Engineering</span>
+                            <span class="topic-tag">CAD Tips</span>
+                            <span class="topic-tag">Career</span>
+                        </div>
+                    </div>
+                    <div class="content-card-action">
+                        <span>Read Articles</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </a>
+
+                <!-- YouTube Channel Card -->
+                <a href="https://www.youtube.com/@shbsultan" class="content-card youtube-card reveal reveal-right" target="_blank" rel="noopener noreferrer">
+                    <div class="content-card-icon">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </div>
+                    <div class="content-card-body">
+                        <h3>YouTube Channel</h3>
+                        <p>Watch video tutorials, project walkthroughs, AutoCAD & Revit tips, and my professional engineering journey updates.</p>
+                        <div class="content-card-topics">
+                            <span class="topic-tag">Tutorials</span>
+                            <span class="topic-tag">Projects</span>
+                            <span class="topic-tag">Vlogs</span>
+                        </div>
+                    </div>
+                    <div class="content-card-action">
+                        <span>Watch Videos</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title reveal">Key Skills</h2>
             <div class="skills-grid">
-                <div class="skill-category">
+                <div class="skill-category reveal reveal-delay-1 shine-effect">
                     <h3 class="skill-category-title">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
@@ -295,7 +310,7 @@
                     </div>
                 </div>
                 
-                <div class="skill-category">
+                <div class="skill-category reveal reveal-delay-2 shine-effect">
                     <h3 class="skill-category-title">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <circle cx="12" cy="12" r="3"/>
@@ -312,7 +327,7 @@
                     </div>
                 </div>
                 
-                <div class="skill-category">
+                <div class="skill-category reveal reveal-delay-3 shine-effect">
                     <h3 class="skill-category-title">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
@@ -330,7 +345,7 @@
                     </div>
                 </div>
                 
-                <div class="skill-category">
+                <div class="skill-category reveal reveal-delay-4 shine-effect">
                     <h3 class="skill-category-title">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
@@ -347,7 +362,7 @@
                     </div>
                 </div>
                 
-                <div class="skill-category leadership">
+                <div class="skill-category leadership reveal reveal-delay-5 shine-effect">
                     <h3 class="skill-category-title">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
@@ -366,7 +381,7 @@
     <!-- Experience Section -->
     <section class="section experience" id="experience">
         <div class="container">
-            <h2 class="section-title reveal">Relevant Experience & Projects</h2>  <!-- ✅ CHANGED -->
+            <h2 class="section-title reveal">Relevant Experience & Projects</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-marker"></div>
@@ -440,9 +455,9 @@
     <!-- Education Section -->
     <section class="section education" id="education">
         <div class="container">
-            <h2 class="section-title">Certifications & Education</h2>
+            <h2 class="section-title reveal">Certifications & Education</h2>
             <div class="education-grid">
-                <div class="education-card">
+                <div class="education-card reveal reveal-delay-1 shine-effect">
                     <div class="education-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
@@ -456,7 +471,7 @@
                     </div>
                 </div>
                 
-                <div class="education-card">
+                <div class="education-card reveal reveal-delay-2 shine-effect">
                     <div class="education-icon certified">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
@@ -470,7 +485,7 @@
                     </div>
                 </div>
                 
-                <div class="education-card">
+                <div class="education-card reveal reveal-delay-3 shine-effect">
                     <div class="education-icon certified">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
@@ -485,7 +500,7 @@
                     </div>
                 </div>
                 
-                <div class="education-card ongoing">
+                <div class="education-card ongoing reveal reveal-delay-4 shine-effect">
                     <div class="education-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
@@ -506,12 +521,12 @@
     <section class="section cta" id="contact">
         <div class="container">
             <div class="cta-content">
-                <h2 class="cta-title">Ready to Contribute</h2>
-                <p class="cta-text">
+                <h2 class="cta-title reveal">Ready to Contribute</h2>
+                <p class="cta-text reveal">
                     Open to junior mechanical, pipeline, or facilities engineering opportunities in Calgary. 
                     Available for contract or permanent roles.
                 </p>
-                <div class="cta-buttons">
+                <div class="cta-buttons reveal">
                     <a href="resume.pdf" class="btn btn-primary btn-large" download>
                         <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                             <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/>
@@ -556,6 +571,23 @@
                         APEGA E.I.T.
                     </p>
                 </div>
+                <div class="footer-social">
+                    <a href="https://medium.com/@shihabsultan" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="Medium Blog">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@shbsultan" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="YouTube Channel">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/shihab-sultan/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                    </a>
+                </div>
                 <div class="footer-copyright">
                     <p>© 2025 Shihab Bin Sultan. All rights reserved.</p>
                 </div>
@@ -564,17 +596,5 @@
     </footer>
 
     <script src="script.js"></script>
-            <!-- Scroll to Top Button -->
-    <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M18 15l-6-6-6 6"/>
-        </svg>
-    </button>
-
-    <script src="script.js"></script>
 </body>
-
 </html>
-
-
-
