@@ -1098,3 +1098,202 @@ ul {
         font-size: 0.95rem;
     }
 }
+
+/* ================================
+   Content Section - Blog & YouTube
+   ================================ */
+.content-section {
+    background: var(--grey-light);
+}
+
+.section-subtitle {
+    text-align: center;
+    font-size: 1.1rem;
+    color: var(--grey-medium);
+    max-width: 600px;
+    margin: -1.5rem auto var(--spacing-xl);
+    line-height: 1.7;
+}
+
+.content-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-xl);
+}
+
+.content-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: var(--spacing-xl);
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+    border: 2px solid transparent;
+    transition: all var(--transition-normal);
+    text-decoration: none;
+    color: inherit;
+}
+
+.content-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Medium Blog Card Styles */
+.blog-card:hover {
+    border-color: #00ab6c;
+}
+
+.blog-card .content-card-icon {
+    background: linear-gradient(135deg, #00ab6c 0%, #00d67d 100%);
+}
+
+.blog-card:hover .content-card-action {
+    color: #00ab6c;
+}
+
+/* YouTube Card Styles */
+.youtube-card:hover {
+    border-color: #ff0000;
+}
+
+.youtube-card .content-card-icon {
+    background: linear-gradient(135deg, #ff0000 0%, #ff4444 100%);
+}
+
+.youtube-card:hover .content-card-action {
+    color: #ff0000;
+}
+
+.content-card-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+}
+
+.content-card-icon svg {
+    width: 30px;
+    height: 30px;
+}
+
+.content-card-body h3 {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0;
+}
+
+.content-card-body p {
+    font-size: 0.95rem;
+    color: var(--grey-dark);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.content-card-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-xs);
+}
+
+.topic-tag {
+    background: var(--grey-light);
+    color: var(--grey-dark);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.content-card:hover .topic-tag {
+    background: var(--grey);
+}
+
+.content-card-action {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-xs);
+    font-weight: 600;
+    font-size: 0.95rem;
+    color: var(--navy);
+    margin-top: auto;
+    padding-top: var(--spacing-md);
+    border-top: 1px solid var(--grey);
+    transition: color var(--transition-fast);
+}
+
+.content-card-action svg {
+    width: 20px;
+    height: 20px;
+    transition: transform var(--transition-fast);
+}
+
+.content-card:hover .content-card-action svg {
+    transform: translateX(5px);
+}
+
+/* Featured Content */
+.featured-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+    padding: var(--spacing-lg);
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.featured-item {
+    text-align: center;
+    padding: var(--spacing-md);
+}
+
+.featured-item h4 {
+    font-size: 0.9rem;
+    color: var(--grey-medium);
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+}
+
+.featured-item a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--navy);
+    line-height: 1.5;
+    transition: color var(--transition-fast);
+}
+
+.featured-item a:hover {
+    color: var(--accent-blue);
+}
+
+/* Content Section Responsive */
+@media (max-width: 768px) {
+    .content-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .content-card {
+        padding: var(--spacing-lg);
+    }
+    
+    .featured-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .featured-item {
+        padding: var(--spacing-sm);
+    }
+    
+    .featured-item + .featured-item {
+        border-top: 1px solid var(--grey);
+        padding-top: var(--spacing-md);
+    }
+}
